@@ -9,8 +9,8 @@ function decodeKeyFromUrl($key) {
     return urldecode($key);
 }
 
-$validKey = parseSpecialChars("test");// That is your key
-$validIntegrityKey = parseSpecialChars("MrTusarRX");// that is integrityKey 
+$validKey = parseSpecialChars("felix");// That is your key
+$validIntegrityKey = parseSpecialChars("indomodz");// that is integrityKey 
 
 
 $key = isset($_GET['key']) ? decodeKeyFromUrl(parseSpecialChars($_GET['key'])) : '';
